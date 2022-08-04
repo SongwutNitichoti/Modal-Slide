@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div onclick="open_modal()" class="btn">
+        Click to open modal
+    </div>
+
+    <div class="modal" id="modal">
+        <div onclick="close_modal()" class="modal-bg"></div>
+        <div class="modal-card">
+            <h1>Form</h1>
+
+            <div class="form-control">
+                <span>First Name</span>
+                <input type="text" class="txt">
+            </div>
+            <div class="form-control">
+                <span>Last Name</span>
+                <input type="text" class="txt">
+            </div>
+            <div class="form-control">
+                <span>Date of birth</span>
+                <input type="text" class="txt">
+            </div>
+            <div class="form-control">
+                <span>email</span>
+                <input type="text" class="txt">
+            </div>
+            <div class="form-button">
+              <div onclick="close_modal()" class="btn-cancel">Cancel</div> 
+              <div class="btn-save">Save</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
